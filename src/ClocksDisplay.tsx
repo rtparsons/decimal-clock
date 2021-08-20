@@ -6,6 +6,7 @@ import FractionalTimeDisplay from './clocks/FractionalTimeDisplay';
 import TwentyFourHourTimeDisplay from './clocks/TwentyFourHourTimeDisplay';
 import TwelveHourTimeDisplay from './clocks/TwelveHourTimeDisplay';
 import { Route, Switch } from 'react-router-dom';
+import JayTimeDisplay from './clocks/JayTimeDisplay';
 
 interface IProps {
 }
@@ -54,6 +55,9 @@ export default class ClocksDisplay extends React.Component<IProps, IState> {
                 </Route>
                 <Route path="/twelve">
                   <TwelveHourTimeDisplay date={ this.state.date }></TwelveHourTimeDisplay>
+                </Route>
+                <Route path="/jay">
+                  <JayTimeDisplay date={ this.state.date }></JayTimeDisplay>
                 </Route>
                 <Route path={["/decimal", "/"]}>
                   <DecimalTimeDisplay date={ this.state.date }></DecimalTimeDisplay>

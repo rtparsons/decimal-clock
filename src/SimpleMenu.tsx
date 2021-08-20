@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import { Menu as MenuIcon } from '@material-ui/icons';
 import MenuItem from '@material-ui/core/MenuItem';
 import { IconButton, Menu } from '@material-ui/core';
@@ -39,6 +38,9 @@ export default function SimpleMenu() {
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link to="/fractional">Fractional</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link to="/jay">Jay</Link>
         </MenuItem>
       </Menu>
     </div>
